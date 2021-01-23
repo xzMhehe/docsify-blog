@@ -28,6 +28,8 @@
 - JDK的动态代理需要了解两个类
 - 核心 : InvocationHandler     和     Proxy   ， 打开JDK帮助文档看看
 - 【InvocationHandler：调用处理程序】
+
+
 ![mark](http://image.codingce.com.cn/blog/20200729/083308753.png)
 
 
@@ -121,6 +123,7 @@ public class Client {
 ```
 
 ### 缺点
+
 - 一个真实角色就会产生一个代理角色, 代码量就会翻倍 开发效率会变低
 
 
@@ -218,6 +221,7 @@ public class UserServiceProxy implements UserService {
     - 基于接口-JDK动态代理
     - 基于类: cglib
     - java字节码实现: javasist
+
 
 需要了解两个类: Proxy InvocationHandler
 
@@ -383,6 +387,7 @@ public class Client {
 进入重点
 什么是AOP
 AOP（Aspect Oriented Programming）意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是函数式编程的一种衍生范型。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。
+
 ![mark](http://image.codingce.com.cn/blog/20200731/095353004.png)
 
 # Aop在Spring中的作用
@@ -398,8 +403,11 @@ AOP（Aspect Oriented Programming）意为：面向切面编程，通过预编�
 - 连接点（JointPoint）：与切入点匹配的执行点。
 
 ![mark](http://image.codingce.com.cn/blog/20200731/095822859.png)
+
 SpringAOP中，通过Advice定义横切逻辑，Spring中支持5种类型的Advice:
+
 ![mark](http://image.codingce.com.cn/blog/20200731/095855041.png)
+
 即 Aop 在 不改变原有代码的情况下 , 去增加新的功能 .
 
 # 使用Spring实现Aop
@@ -472,6 +480,7 @@ public class UserServiceImpl implements UserService {
 ```
 
 ### bean
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -512,6 +521,7 @@ public class UserServiceImpl implements UserService {
 
 ## 第二种
 自定义实现AOP【主要切面定义】
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -579,6 +589,7 @@ public class UserServiceImpl implements UserService {
 ## 第三种注解实现
 
 - AnnotationPointCut
+
 ```java
 //使用注解方式实现AOP
 @Aspect //标注这个类是一个切面
@@ -608,7 +619,9 @@ public class AnnotationPointCut {
     }
 }
 ```
+
 - XML
+
 ```xml
     <!--方式三-->
     <bean id="annotationpointcut" class="cn.com.codingce.diy.AnnotationPointCut"/>
@@ -616,13 +629,6 @@ public class AnnotationPointCut {
 <!--    <aop:aspectj-autoproxy proxy-target-class="false"/>    -->
     <aop:aspectj-autoproxy proxy-target-class="false"/>
 ```
-
-
-
-
-
-
-
 
 
 

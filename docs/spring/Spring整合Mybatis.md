@@ -1,6 +1,7 @@
 ![](https://image.codingce.com.cn/11.jpg)
 
 # 整合Mybatis
+
 - 导入相关jar包
     - junit
     - mybatis
@@ -8,6 +9,7 @@
     - spring相关的
     - aop织入
     - mybatis-spring 【new】
+    
     ```xml
         <dependencies>
         <!--mybatis-->
@@ -69,11 +71,14 @@
         </resources>
     </build>
     ```
+
 - 编写配置文件
 - 测试
 
 # 回忆Mybatis（他认识你你不认识他）
+
 - 编写实体类
+
 ```java
 public class User {
 
@@ -82,7 +87,9 @@ public class User {
     private String pwd;
     }
 ```
+
 - 编写核心配置文件
+
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
@@ -122,14 +129,10 @@ public class User {
     </mappers>
 </configuration>
 ```
+
 - 编写接口
+
 ```java
-package cn.com.codingce.mapper;
-
-import cn.com.codingce.pojo.User;
-
-import java.util.List;
-
 public interface UserMapper {
 
     public List<User> selectUser();
@@ -169,6 +172,7 @@ public interface UserMapper {
 # Mybatis-Spring
 
 - 编写数据源
+
 ```xml
     <!--
         遇到的问题以及解决方案
@@ -185,7 +189,9 @@ public interface UserMapper {
         <property name="password" value="123456"/>
     </bean>
 ```
+
 - sqlSessionFactory
+
 ```xml
     <!--sqlSessionFactory-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -196,6 +202,7 @@ public interface UserMapper {
     </bean>
 ```
 - sqlSessionTemplate
+
 ```xml
     <!--SqlSessionTemplate 这就是我们使用的sqlSession-->
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
@@ -203,7 +210,9 @@ public interface UserMapper {
         <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
 ```
+
 - 需要给接口添加实现类【】
+
 ```java
 public class UserMapperImpl implements UserMapper {
 
@@ -221,13 +230,16 @@ public class UserMapperImpl implements UserMapper {
     }
 }
 ```
+
 - 将自己的实现类，注入到Spring中
+
 ```xml
     <bean id="userMapper" class="cn.com.codingce.mapper.UserMapperImpl">
         <property name="sqlSession" ref="sqlSession"/>
     </bean>
 ```
 - 测试使用即可
+
 ```java
     @Test
     public void test1() throws IOException {
@@ -238,10 +250,6 @@ public class UserMapperImpl implements UserMapper {
         }
     }
 ```
-
-
-
-
 
 
 
