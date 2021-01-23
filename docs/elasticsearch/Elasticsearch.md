@@ -1,4 +1,3 @@
-
 ## 聊聊Doug Cutting
 Doug Cutting，Hadoop语言和Lucene工具包的创始人
 

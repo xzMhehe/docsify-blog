@@ -1,9 +1,18 @@
 <p align="center">
-<img scr="" width="200" height="200" alt="111">
+<img scr="" width="200" height="200" alt="全栈自学社区">
 </p>
 
-<h1 align="center">docsify-blog</h1>
+<h1 align="center">Java技术栈</h1>
+<p align="center">
+本文档是作者从事 Java Developer 以来的学习历程，
+</p>
+<p align="center">
+旨在为大家提供一个较详细的学习教程，
+</p>
 
-[常用资源](https://i.codingce.com.cn)
-[GitHub](https://i.codingce.com.cn)
-[开始阅读](#我的博客)
+<p align="center">
+侧重点更倾向于 Java 服务端所涉及的技术栈，如果本文能为您得到帮助，请给予支持！
+</p>
+
+[GitHub](https://github.com/xzMhehe)
+[开始阅读](README.md)

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>全栈自学社区</title>
+  <title>Java技术栈</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -21,20 +21,27 @@
       coverpage: true,
       // 设置侧边栏
       loadSidebar: true,
-      // 全文搜索
+      // 外链打开方式
+      externalLinkTarget: '_blank',
+      
+      
+      // 搜索插件
       search: {
         // maxAge: 86400000 // 过期时间, 单位毫秒, 默认一天
         paths: 'auto',
-        placeholder: '搜索',
+        placeholder: '🔍Type to search',
         noData: '找不到结果',
         // 搜索标题最大程级   1 - 6
         depth: 3
       }
+
     }
+
+
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
