@@ -124,13 +124,16 @@ public class UserServiceImpl implements UserService {
     }
 }
 ```
+
 - 之前程序是主动创建对象, 控制权在程序猿手上! 
 - 使用了set注入后, 程序不在具有主动性, 而是变成了主动接受对象!
 这种思想, 从本质上解决了问题, 我们程序猿不在去管理对象创建了. 系统的耦合性大大降低, 可以更加专注的在业务的实现上
 这时IOC的原型.      
+
 ![mark](http://image.codingce.com.cn/blog/20200718/075744519.png)     
 
 ## Test
+
 ```java
     public class MyTest {
         public static void main(String[] args) {
