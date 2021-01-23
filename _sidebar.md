@@ -14,7 +14,7 @@
  * [声明式事务](./docs/spring/声明式事务.md)
 
 
-* **SpringMvc开发中**
+* **Spring Mvc开发中**
 
 * **Mybatis开发中**
 

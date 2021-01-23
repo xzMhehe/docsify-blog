@@ -14,7 +14,7 @@
 > 为 Java 面试及常见问题打造的一个项目 [:cn: Java 面试问题](https://i.codingce.com.cn/)
 
 
-> **作者：** codingce小马，Java Developer，[本科大四](https://i.codingce.com.cn)。
+> **作者：** coding小马，Java Developer，[本科大四](https://i.codingce.com.cn)。
 
 [```Java```](#Java)| [`Java8`](#Java8) | [`集合框架`](#集合框架) | [`DataBase`](#DataBase) | [`Spring`](#Spring) | [`HTTP`](#HTTP协议) | [`DevOps`](#DevOps) | [`工具`](#工具) | [`资料`](#资料)
  :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-:
