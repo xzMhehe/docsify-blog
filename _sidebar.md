@@ -42,8 +42,7 @@
 * **RabbitMQ开发中**
  * [MQ的引言](./docs/rabbitmq/RabbitMQ.md)
  * [RabbitMQ安装](./docs/rabbitmq/RabbitMQ环境.md)
- * [生产者-消费者](./docs/rabbitmq/RabbitMQ-生产者-消费者.md)
-
+ * [RabbitMQ消息中间件六种模型](./docs/rabbitmq/RabbitMQ消息中间件六种模型.md)
 
 
 
