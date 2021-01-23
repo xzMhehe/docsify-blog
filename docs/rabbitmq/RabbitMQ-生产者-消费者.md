@@ -1,11 +1,3 @@
----
-title: RabbitMQ-生产者|消费者
-date: 2021-01-22 12:37:58
-tags:
-- RabbitMQ
-categories: 
-- RabbitMQ
----
 
 # RabbitMQ 的第一个程序
 
