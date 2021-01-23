@@ -1,4 +1,4 @@
-![](https://s1.ax1x.com/2020/07/28/aEexPJ.gif)
+![](https://image.codingce.com.cn/11.jpg)
 
 # 代理模式
 为什么要学习代理模式，因为AOP的底层机制就是动态代理！

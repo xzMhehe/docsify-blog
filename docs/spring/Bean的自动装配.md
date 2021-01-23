@@ -1,4 +1,4 @@
-![](https://s1.ax1x.com/2020/07/18/U2Mxvq.gif)
+![](https://image.codingce.com.cn/11.jpg)
 
 
 # Bean的自动装配

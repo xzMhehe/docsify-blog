@@ -1,4 +1,4 @@
-![](https://s1.ax1x.com/2020/07/28/aEexPJ.gif)
+![](https://image.codingce.com.cn/11.jpg)
 
 # 整合Mybatis
 - 导入相关jar包

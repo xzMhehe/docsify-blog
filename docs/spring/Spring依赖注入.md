@@ -1,4 +1,4 @@
-![](https://s1.ax1x.com/2020/07/18/U2Mv2n.gif)
+![](https://image.codingce.com.cn/11.jpg)
 
 # 依赖注入
 ## 构造器注入

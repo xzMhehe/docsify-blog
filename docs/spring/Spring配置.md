@@ -1,4 +1,4 @@
-![](https://s1.ax1x.com/2020/07/28/aEe2b8.gif)
+![](https://image.codingce.com.cn/11.jpg)
 
 # Spring配置
 ## 别名
