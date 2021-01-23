@@ -39,7 +39,9 @@ public class Hello {
     }
 }
 ```
+
 - 编写我们的spring文件,这里我们命名为beans.xml
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -63,7 +65,9 @@ public class Hello {
 
 </beans>
 ```
+
 - 测试
+
 ```java
 public class MyTest {
     public static void main(String[] args) {
@@ -87,6 +91,7 @@ public class MyTest {
 
 # 修改案例一
 在案例一中， 新增一个Spring配置文件beans.xml
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -116,6 +121,7 @@ public class MyTest {
 ```
 
 测试
+
 ```java
 public class MyTest {
 //    public static void main(String[] args) {
@@ -145,6 +151,7 @@ public class MyTest {
 ## 通过无参构造方法来创建
 
 - User.java
+
 ```java
 public class User {
 
@@ -176,6 +183,7 @@ public class User {
 ```
 
 - beans.xml
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -190,6 +198,7 @@ public class User {
 ```
 
 - 测试类
+
 ```java
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
@@ -202,6 +211,7 @@ public class User {
 
 ## 通过有参构造方法来创建
 - 下标赋值
+
 ```xml
     <!--第一种下标赋值-->
     <bean id="user" class="cn.com.codingce.pojo.User">
@@ -210,6 +220,7 @@ public class User {
 ```
  
 - 参数类型
+
 ```xml
     <!--第二种参数类型 不建议使用 假设两个参数都是String-->
     <bean id="user" class="cn.com.codingce.pojo.User">
@@ -218,12 +229,14 @@ public class User {
 ```
 
 ## 参数名来设置
+
 ```xml
     <!--第三种通过参数名来设置-->
     <bean id="user" class="cn.com.codingce.pojo.User">
         <constructor-arg name="name" value="掌上编程"/>
     </bean>
 ```
+
 结论：在配置文件加载的时候。其中管理的对象都已经初始化了！
 
 

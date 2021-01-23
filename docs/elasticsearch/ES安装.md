@@ -2,10 +2,13 @@
 ## ES安装
 环境： jdk1.8 +
 
->下载：https://www.elastic.co/cn/downloads/elasticsearch
->https://www.elastic.co/cn/downloads/kibana
->https://www.elastic.co/cn/downloads/logstash
->https://elasticsearch.cn/download/ 
+>下载：https://www.elastic.co/cn/downloads/elasticsearch     
+>https://www.elastic.co/cn/downloads/kibana       
+>https://www.elastic.co/cn/downloads/logstash    
+>https://elasticsearch.cn/download/       
+
+
+也可关注`全栈自学社区`微信公众号, 回复`电脑环境`关键字获取
 
 
 
@@ -141,6 +144,7 @@ s=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noK
 [2021-01-14T10:46:02,387][INFO ][o.e.l.LicenseService     ] [DESKTOP-GMI8GKQ] license [2860a673-8bb3-4fd4-bbd8-2632d55645c3] mode [basic] - valid
 [2021-01-14T10:46:02,390][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [DESKTOP-GMI8GKQ] Active license is now [BASIC]; Security is disabled
 ```
+<br>
 
 访问 `http://localhost:9200/`
 

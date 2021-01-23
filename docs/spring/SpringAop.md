@@ -43,7 +43,9 @@
 - 一个动态代理可以代理多个类，代理的是接口！
 
 ### 代码
+
 - 接口
+
 ```java
 /**
  * @author xzMa
@@ -57,6 +59,7 @@ public interface Rent {
 ```
 
 - 真实角色
+
 ```java
 /**
  * @author xzMa
@@ -69,7 +72,9 @@ public class Host implements Rent {
     }
 }
 ```
+
 - 代理角色
+
 ```java
 public class Proxy implements Rent {
 
@@ -107,6 +112,7 @@ public class Proxy implements Rent {
 }
 ```
 - 客户端访问代理角色
+
 ```java
 public class Client {
 
@@ -229,6 +235,7 @@ public class UserServiceProxy implements UserService {
 
 
 - ProxyInvocationHandler类
+
 ```java
 //等会我们会用这个类, 自动生成代理类
 public class ProxyInvocationHandler implements InvocationHandler {
@@ -275,6 +282,7 @@ public class ProxyInvocationHandler implements InvocationHandler {
 ```
 
 - Rent
+
 ```java
 /**
  * @author xzMa
@@ -288,6 +296,7 @@ public interface Rent {
 ```
 
 - Host
+
 ```java
 /**
  * @author xzMa
@@ -302,6 +311,7 @@ public class Host implements Rent {
 ```
 
 - Client
+
 ```java
 public class Client {
     public static void main(String[] args) {
@@ -322,6 +332,7 @@ public class Client {
 ```
 
 **继续优化使其成为公共的**
+
 ```java
 //等会我们会用这个类, 自动生成代理类
 public class ProxyInvocationHandler implements InvocationHandler {
@@ -358,6 +369,7 @@ public class ProxyInvocationHandler implements InvocationHandler {
 ```
 
 - Client
+
 ```java
 public class Client {
     public static void main(String[] args) {

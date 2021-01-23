@@ -13,6 +13,7 @@ Java REST Client [7.10] » Java High Level REST Client
 
 
 - 找到原生依赖
+
 ```xml
     <dependency>
         <groupId>org.elasticsearch.client</groupId>
@@ -23,6 +24,7 @@ Java REST Client [7.10] » Java High Level REST Client
 
 
 - 找对象
+
 ```java
 RestHighLevelClient client = new RestHighLevelClient(
         RestClient.builder(
@@ -43,6 +45,7 @@ client.close();
 
 
 - ElasticSearchConfig
+
 ```java
 /**
  * 找到对象
@@ -66,25 +69,10 @@ public class ElasticSearchConfig {
 
 }
 ```
+
 - 索引测试代码
+
 ```java
-package cn.com.codingce;
-
-import cn.com.codingce.config.ElasticSearchConfig;
-import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
-import org.elasticsearch.action.support.master.AcknowledgedResponse;
-import org.elasticsearch.client.RequestOptions;
-import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.client.indices.CreateIndexRequest;
-import org.elasticsearch.client.indices.CreateIndexResponse;
-import org.elasticsearch.client.indices.GetIndexRequest;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.io.IOException;
-
 @SpringBootTest
 class CodingceEsApiApplicationTests {
 
@@ -129,14 +117,8 @@ class CodingceEsApiApplicationTests {
 
 
 - 实体类
+
 ```java
-package cn.com.codingce.pojo;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
-
 /**
  * @author mxz
  */
@@ -284,12 +266,6 @@ public class User {
 
     }
 ```
-
-
-
-
-
-
 
 
 

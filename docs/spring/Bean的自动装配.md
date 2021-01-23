@@ -12,7 +12,9 @@
 
 ## 测试
 - 搭建环境成功 ： 一个人有两个宠物
+
 ### ByName自动装配
+
 ```xml
     <bean id="cat" class="cn.com.codingce.pojo.Cat"/>
     <bean id="dog" class="cn.com.codingce.pojo.Dog"/>
@@ -26,7 +28,9 @@
 <!--        <property name="cat" ref="cat"/>-->
      </bean>
 ```
+
 ### ByType自动装配
+
 ```xml
     <bean id="cat" class="cn.com.codingce.pojo.Cat"/>
     <bean id="dog" class="cn.com.codingce.pojo.Dog"/>
@@ -52,6 +56,7 @@ The introduction of annotation-based configuration raised the question of whethe
 要用注解须知
 - 导入约束 context  
 - 配置注解的支持<context:annotation-config/>
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -74,19 +79,19 @@ The introduction of annotation-based configuration raised the question of whethe
 直接使用在属性上即可! 也可以在set方式上的使用
 使用Autowired我们就可以不用使用Set方法了, 前提是你这个自动装配属性在IOC(Spring)容器中存在, 且符合名字byname
 科普:
+
 ```java
 @Nullable: 字段标记了这个注解, 说明这个字段可以为null；
-
 ```
-```java
 
+
+```java
 public @interface Autowired {
     boolean required() default true;
 }
 ```
 
 ```java
-
 public class People {
 
     //如果显示的定义了Autowried的required属性为false, 说明这个对象可以为Null 否则不许为空
@@ -102,6 +107,7 @@ public class People {
 去配合@Autowired的使用
 
 ### Resource注解
+
 ```java
 public class People {
     @Resource
@@ -123,12 +129,15 @@ public class People {
 
 # 使用注解开发
 - bean
+
 ```java
 注解说明
 @Component: 组件放在类名上, 说明这个类被Spring管理了, 就是Bean
 @Value: 相当于等价<property name="name" value="掌上编程" />
 ```
+
 - 属性如何注入
+
 ```java
 @Component
 public class User {
@@ -138,7 +147,9 @@ public class User {
 
 }
 ```
+
 - 衍生的注解
+
 @Componment有几个衍生的注解, 我们在Web开发中, 会按照mvc三层架构分层
     - dao【@Repository】
     - service【@Service】
@@ -146,6 +157,7 @@ public class User {
     这四个注解功能都是一样的, 都是代表将某个类注册到Spring, 装配Bean
 
 - 作用域
+
 ```java
 @Component
 @Scope("prototype")
@@ -168,6 +180,7 @@ xml与注解最佳实践
 - xml用来管理bean;
 - 注解只负责完成属性的注入.
 - 我们在使用过程中, 只需要注意一个问题: 必须让注解生效, 就需要开启注解的支持
+
 ```xml
     <!--指定要扫描的宝, 这个包下的注解就会生效-->
     <context:component-scan base-package="cn.com.codingce"/>
@@ -182,12 +195,8 @@ JavaConfig是Spring的一个子项目, 在Spring4之后, 它成为了一个核�
 
 
 实体类
+
 ```java
-package cn.com.codingce.pojo;
-
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
 //这里这个注解的意思, 就是说明这个类被Spring接管了, 注册到了容器中
 @Component
 public class User {
@@ -222,14 +231,6 @@ public class User {
 配置文件
 
 ```java
-package cn.com.codingce.config;
-
-import cn.com.codingce.pojo.User;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-
 /**
  * @Configuration加上这个注解就相当于beans
  * @author xzMa
@@ -249,7 +250,6 @@ public class ZeConfig {
     }
 
 }
-
 ```
 
 

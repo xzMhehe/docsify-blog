@@ -10,7 +10,6 @@
  * [Spring概述及IOC理论推导](./docs/spring/Spring概述及IOC理论推导.md)
  * [快速上手Spring](./docs/spring/快速上手Spring.md)
  * [Spring配置](./docs/spring/Spring配置.md)
- * [快速上手Spring](./docs/spring/快速上手Spring.md)
  * [Spring依赖注入](./docs/spring/Spring依赖注入.md)
  * [SpringAop](./docs/spring/SpringAop.md)
  * [Bean的自动装配](./docs/spring/Bean的自动装配.md)
