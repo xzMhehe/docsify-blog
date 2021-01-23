@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-侧重点更倾向于 Java 服务端所涉及的技术栈，如果本文能为您得到帮助，请给予支持！
+如果本文能为您得到帮助，请给予支持！
 </p>
 
 [GitHub](https://github.com/xzMhehe)
