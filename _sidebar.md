@@ -36,6 +36,13 @@
  * [京东搜索](./docs/elasticsearch/京东搜索.md)
 
 * **RabbitMQ开发中**
+ * [MQ的引言](./docs/rabbitmq/RabbitMQ.md)
+ * [RabbitMQ安装](./docs/rabbitmq/RabbitMQ环境.md)
+ * [生产者-消费者](./docs/rabbitmq/RabbitMQ-生产者-消费者.md)
+
+
+
+
 
 * 工具
     - [Git 常用命令及日常问题集锦](./docs/tools/git.md)
