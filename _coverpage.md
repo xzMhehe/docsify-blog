@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./docs/imgs/java.png" width="200" height="130"  alt="全栈自学社区" />
+<img src="./docs/imgs/java.png" width="200" height="130"  alt="后端码匠" />
 </p>
 
 <h1 align="center">Java技术栈</h1>

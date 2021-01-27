@@ -1,4 +1,4 @@
-# 全栈自学社区
+# 后端码匠
 
 # Java技术栈
 
@@ -7,7 +7,7 @@
 本文档是作者从事 ```Java Developer``` 以来的学习历程，旨在为大家提供一个较详细的学习教程，侧重点更倾向 于 Java 服务端所涉及的技术栈，如果本文能为您得到帮助，请给予支持！
 
 **如何支持：**
-- 关注公众号 [全栈自学社区](https://image.codingce.com.cn/qrcode_for_gh_d5e64639fc98_258.jpg)
+- 关注公众号 [后端码匠](https://image.codingce.com.cn/qrcode_for_gh_d5e64639fc98_258.jpg)
 - 点击右上角Star :star: 给予关注
 - 分享给您身边更多的小伙伴
 
